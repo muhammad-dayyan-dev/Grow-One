@@ -5,3 +5,5 @@ const COLORS = {
   gray: "#494948",
   white: "#FFFFFF",
 };
+
+export { COLORS };
