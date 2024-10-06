@@ -1,13 +1,16 @@
-import { View, Text } from "react-native";
+import { Text } from "react-native";
 import React from "react";
 import { homeStyle } from "../styles";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { StatusBar } from "expo-status-bar";
 
 const Home = () => {
   const { container, text } = homeStyle;
   return (
-    <View style={container}>
+    <SafeAreaView style={container}>
+      <StatusBar style="light" />
       <Text style={text}>Home</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 

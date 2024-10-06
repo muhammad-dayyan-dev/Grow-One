@@ -11,5 +11,6 @@ export const homeStyle = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
+    fontFamily: "Roboto_700Bold",
   },
 });
