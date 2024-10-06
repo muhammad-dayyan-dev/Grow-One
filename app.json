@@ -1,22 +1,22 @@
 {
   "expo": {
-    "name": "Grow-One",
-    "slug": "Grow-One",
+    "name": "Grow One",
+    "slug": "Grow One",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/growone.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#242526"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/growone.png",
         "backgroundColor": "#ffffff"
       }
     },
