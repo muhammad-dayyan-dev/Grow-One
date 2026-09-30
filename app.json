@@ -1,40 +1,39 @@
 {
   "expo": {
     "name": "Grow One",
-    "slug": "Grow One",
-    "scheme": "Grow One",
-    "version": "1.0.0",
+    "slug": "grow-one",
+    "scheme": "growone",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/growone.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#242526"
-    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/growone.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F7F9F6"
       }
     },
     "web": {
+      "bundler": "metro",
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
+      "expo-router",
+      "expo-font",
       [
-        "expo-font",
+        "expo-splash-screen",
         {
-          "fonts": [
-            "node_modules/@expo-google-fonts/roboto/Roboto_700Bold.ttf",
-            "node_modules/@expo-google-fonts/roboto/Roboto_500Medium.ttf",
-            "node_modules/@expo-google-fonts/roboto/Roboto_400Regular.ttf"
-          ]
+          "image": "./assets/splash.png",
+          "imageWidth": 160,
+          "backgroundColor": "#142D2A"
         }
       ]
-    ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
