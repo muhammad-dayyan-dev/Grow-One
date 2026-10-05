@@ -15,5 +15,6 @@ describe("format helpers", () => {
 
   it("formats market capitalization in a compact form", () => {
     expect(compactMillions(1_234.5)).toBe("$1.2B");
+    expect(compactMillions(4_860_153)).toBe("$4.9T");
   });
 });

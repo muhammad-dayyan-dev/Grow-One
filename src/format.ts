@@ -18,7 +18,15 @@ export function signedPercent(value: number | undefined) {
 
 export function compactMillions(value: number | undefined) {
   if (value == null || !Number.isFinite(value) || value <= 0) return "—";
-  return `$${new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 1 }).format(value * 1_000_000)}`;
+  const [amount, suffix] =
+    value >= 1_000_000
+      ? [value / 1_000_000, "T"]
+      : value >= 1_000
+        ? [value / 1_000, "B"]
+        : value >= 1
+          ? [value, "M"]
+          : [value * 1_000, "K"];
+  return `$${amount.toFixed(1).replace(/\.0$/, "")}${suffix}`;
 }
 
 export function quoteTime(unixSeconds: number) {
